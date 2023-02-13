@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imag1 {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.myCreatli {
+    list-style: none;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 10px 10px;
+
+}
+
+.navbar {
+    font-size: 20px;
+    top: 0;
+    left: 0;
+}
+
+.navbar-light .nav-item .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.nav-item i:hover,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: coral;
+}
+
+.nav-item i {
+    font-size: 23px;
+    padding: 0 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+button {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #3a3833;
+}
+hr{
+    width: 30px;
+    height: 2px;
+    background-color: coral;
+}
+.star i{
+    font-size: 20px;
+    color: goldenrod;
+}
+.star{
+    padding: 10px 0;
+}
+#home {
+    background-image: url(../image/img/back.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 50px center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#home span {
+    color: coral;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    color: red;
+    font-size: 22px;
+    font-weight: 500;
+
+
+}
+
+#new {
+    color: coral;
+}
+
+.one img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+.one .details:hover{
+    background-color: rgba(245, 178, 178, 0.7);
+    transition: ;
+}
+.one .details button{
+    display: inline-block;
+    transform: translateY(70px);
+}
+.one .details button:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+.one:nth-child(1) .details{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+.one:nth-child(2) .details{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.one:nth-child(3) .details{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-end;
+    text-align: end;
+
+}
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+}
+.product:hover img{
+    transition: 0.3s all ease;
+    /* background-color: rgba(245, 178, 178, 0.7); */
+    opacity: 0.7;
+    transition: 0.3s all;
+}
+.product .buy-button{
+    background-color: coral;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product:hover .buy-button {
+    opacity: 1;
+    transition:translateY(0);
+}
+#banner{
+    background-image: url(../image/img/banner/2.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 60px center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#banner h4{
+    color: #d8d8d8;
+}
+#banner h1{
+    color: #d8d8d8;
+}
+#banner button{
+    background-color: coral;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+footer{
+    background-color: #222222;
+    /* color: white; */
+}
+footer h5{
+    /* background-color: #222222; */
+    color: white;
+    font-weight:bold;
+    font-size: 1.2rem;
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: #999;
+}
+footer li a:hover{
+    font-size: 0.8rem;
+    color: #999;
+    border: none;
+    outline: none;
+}
+footer p{
+    color: #999;
+    font-size: 1rem;
+}
+footer h6{
+    font-size: 0.8rem;
+    color: #999;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:991px) {
+    body>nav>div>button {
+        border: none;
+        outline: none;
+}
+
+    body>nav>div>button:hover {
+        background-color: coral;
+        border: none;
+        outline: none;
+        color: white;
+    }
+
+    #navbarSupportedContent>ul {
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 1rem;
+        /* text-align: right; */
+    }
+
+    #navbarSupportedContent>ul>li:nth-child(n)>a {
+        padding: 7px 0;
+    }
+}
